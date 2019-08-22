@@ -13,6 +13,7 @@ class SearchesController < ApplicationController
 
     body_hash = JSON.parse(@resp.body)
     @vanues = body_hash["response"]["venues"]
-   render 'search'
+    render 'search'
   end
+  
 end
